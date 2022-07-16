@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajith's Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar shadow">
+      <a href="#landing">
+        <img id="logo" src="./assets/logo.png"></img>
+      </a>
+      <ul>
+        <li>
+          <a href="#about"><span class="small-text">01.</span> About</a>
+        </li>
+        <li>
+          <a href="#projects"><span class="small-text">02.</span> Projects</a>
+        </li>
+        <li>
+          <a href="#contact"><span class="small-text">03.</span> Contact</a>
+        </li>
+      </ul>
+      <div class="hamburger" onclick="openSideBar(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+
+    <div id="side-bar" class="side-bar-nav">
+          <a href="#about" onclick="closeSideBar()"><span class="small-text">01.</span> About</a>
+          <a href="#projects" onclick="closeSideBar()"><span class="small-text">02.</span> Projects</a>
+          <a href="#contact" onclick="closeSideBar()"><span class="small-text">03.</span> Contact</a>
+    </div>
+    
+    <main>
+      <section id="landing">
+          <p class="small-text">Hi, I am </p>
+          <h1 id="name">Ajith Kusalakumar.</h1>
+          <h1><span id="typed">_</span></h1>
+          <p>I am a full-stack web developer, specializing on the backend.
+              I have strong analytical background with a degree in Mathematics and Physics and Computer Science.
+            Currently, I am focused on building secure and efficent web-applications.</p>
+      </section>
+
+      <ul class="left-social">
+          <li>
+              <a> <i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+          </li>
+          <li>
+              <i class="fa-brands fa-github fa-lg"></i>
+          </li>
+          <li>
+              <div class="vertical-line"></div>
+          </li>
+      </ul>
+
+      <ul class="right-social">
+          <li>
+              <a class="email" href = "mailto: ajithkusalakumar@gmail.com">ajith.kusalakumar@gmail.com</a>
+          </li>
+          <li>
+              <div class="vertical-line"></div>
+          </li>
+      </ul>
+
+      <section id="about">
+          <hr>
+          <h1><span class="small-text">01.</span>About Me</h1>
+          <p>
+            Hi, My name is Ajith Kusalakumar. I started programming while I was studying Mathematics and Physics at the University of Toronto. I learned python to analyze data gathered in experiments and later learned C++ to program microcontrollers for these experiments. I enjoyed programming a lot more than physics experiments.
+          </p>
+          <p>
+            Once I graduated, I enrolled into the Computer Science program at Algoma University. I got quite a bit of transfer credits, which allowed me to complete the degree at an accelerated pace.
+          </p>
+          <p>
+            I had gotten a research assistant position in the computer science department where I worked on multiple projects throughout my studies in the areas of encryption, networking, and machine learning.
+          </p>
+          <p>
+            I was accepted into the master's program of my choice, but I realized that I enjoyed writing software over research, so I declined my offer to find a job I love.
+          </p>
+          <p>
+            That leads us to today. I am currently focusing on web development. 
+          </p>
+          <p>
+            I am looking for an entry-level software engineering job.  
+          </p>
+          <p>
+            Here are the programming languages and technologies I am familiar with:
+          </p>
+
+          <div class="tech-list">
+            <span>Javascript</span>
+            <span>NodeJS</span>
+            <span>ReactJS</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>MongoDB</span>
+            <span>MySQL</span>
+
+
+
+          </div>
+      </section>
+
+      <section id="projects">
+          <hr>
+          <h1><span class="small-text">02.</span>Projects</h1>
+          <h3 class="project-type">Full Stack</h3>
+          <div class="'project-container">
+            <div class="project">
+              <img src="./assets/portfolio-img.png" alt="project-img"> 
+              <h3 class="project-name">Developer Portfolio</h3>
+              <div class="text-container">
+                <p>A simple developer portfolio that was made using vanila <span class="highlight">Javascript</span>, 
+                  <span class="highlight">HTML</span> and <span class="highlight">CSS</span>. It is a simple and clean website that displays my projects and 
+                  my contact information.
+                </p>
+              </div>
+              <ul class='stack-list'>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+                <ul class="social-list">
+                  <li>
+                    <a> 
+                      <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a> 
+                      <i class="fa-solid fa-square-arrow-up-right fa-2xl"></i>
+                    </ul>
+
+            </div>
+
+            <div class="project">
+              <img src="./assets/huma-kabakci-oRk4Ep65tRc-unsplash.jpg" alt="project-img"> 
+              <h3 class="project-name">Coming Soon</h3>
+              <div class="text-container">
+                <p>Coming Soon</p>
+              </div>
+              <ul class='stack-list'>
+              </ul>
+                <ul class="social-list">
+                  <li>
+                    <a> 
+                      <i class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a> 
+                      <i class="fa-solid fa-square-arrow-up-right fa-2xl"></i>
+              </ul>
+
+              <div class="stack"></div>
+            </div>
+
+          </div>
+          <h3 class="project-type">Back-End Projects</h3>
+          <div class="backend-project-container"> 
+            <div class="back-end-project">
+              <ul class="social-list">
+                <li>
+                  <a href="https://github.com/ajith01/PhotoEngine-images-API">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-square-arrow-up-right fa-2xl"></i>
+                  </a>
+                </li>
+              </ul>
+              <h4 class="back-end-project-name">PhotoEngine images API</h4>
+              <p class="backend-description"> A REST API that allows users to submit links of images with falling into various categories, which can be later queried by other users to use as placeholder images. The users can perform basic CRUD operations on the databases using the API.</p>
+              <ul class='stack-list'>
+                <li>Node</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+              </ul>
+            </div>
+
+
+                      <div class="back-end-project">
+              <ul class="social-list">
+                <li>
+                  <a href="">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i class="fa-solid fa-square-arrow-up-right fa-2xl"></i>
+                  </a>
+                </li>
+              </ul>
+              <h4 class="back-end-project-name">App coming Soon</h4>
+              <p class="backend-description"> Description for app coming soon</p>
+              <ul class='stack-list'>
+                <li>Node</li>
+                <li>MongoDB</li>
+                <li>JWT</li>
+              </ul>
+            </div>
+
+          </div>
+      </section>
+
+      <section id="contact">
+          <h3><span class="small-text">03.</span>Contact</h3>
+          <h1>Drop me a line!</h1>
+          <p> I am looking for a full-stack or back-end developer position. 
+            If you are a recruiter, or just want to talk, please send me an email.
+            I will get back to you as soon as possible.
+          </p>
+          <button >
+            <a href="mailto:ajithkusalakumar@gmail.com?subject=Job Offer">Click to say Hi!</a>  
+          </button>
+      </section>
+
+    </main>
+    <footer>
+      <a  class='email-footer' href="mailto:ajithkusalakumar@gmail.com?subject=Job Offer">ajith.kusalakumar@gmail.com</a>  
+      <div class="social-list">
+        <a href="https://github.com/ajith01/" > 
+          <i class="fa-brands fa-github fa-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ajith-kusalakumar/"> <i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
