@@ -18,11 +18,7 @@ window.onscroll = function () {
 
 $(() => {
   $('#name').slideDown('slow', () => {
-    $('#landing > p').slideDown('slow', () => {
-      $('#name').slideDown('slow', () => {
-        $('#landing > p').slideDown('slow', () => {});
-      });
-    });
+    $('.landing-desc').animate({ left: '0px' });
   });
 });
 

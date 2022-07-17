@@ -24,6 +24,11 @@ body {
 }
 a {
   text-decoration: none;
+  color: var(--text-teal);
+}
+
+a:hover {
+  color: var(--bright-green);
 }
 
 li {
@@ -127,12 +132,16 @@ nav ul li a:hover {
 #landing p {
   padding-right: 20vw;
   color: var(--text-teal);
-  display: none;
   margin-top: auto;
 }
 
 #landing p.small-text {
   font-weight: 400;
+}
+
+.landing-desc {
+  position: relative;
+  left: -1000px;
 }
 
 span.typed:before {
@@ -290,7 +299,8 @@ hr {
 #projects img {
   mix-blend-mode: screen;
   width: 40vw;
-  height: 60%;
+  height: auto;
+  height: 30vw;
   position: absolute;
 }
 
