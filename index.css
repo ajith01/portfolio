@@ -8,7 +8,6 @@
   --text-teal: #dbf7f8;
   --dark-teal: #598487;
   --sidebar-teal: #416264;
-
   --margin: 10vw;
 }
 
@@ -75,25 +74,19 @@ p {
   backdrop-filter: blur(5px);
 }
 
-nav a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-}
-
 nav ul {
   display: flex;
 }
 
-nav ul li {
+nav li {
   margin: 0 40px;
 }
 
-nav ul li a {
+nav a {
   color: whitesmoke;
 }
 
-nav ul li a:hover {
+nav a:hover {
   color: var(--bright-green);
 }
 
@@ -141,13 +134,7 @@ nav ul li a:hover {
 
 .landing-desc {
   position: relative;
-  left: -1000px;
-}
-
-span.typed:before {
-  height: 3vw;
-  width: 3vw;
-  content: '_';
+  left: -100%;
 }
 
 #landing p.small-text {
@@ -167,24 +154,23 @@ span.typed:before {
   margin: 25px 0;
 }
 
-.left-social {
+.left-social,
+.right-social {
   position: fixed;
   top: 50vh;
-  left: 40px;
   color: var(--text-teal);
 }
 
 .email {
   writing-mode: vertical-rl;
-  text-decoration: none;
-  color: var(--text-teal);
+}
+
+.left-social {
+  left: 40px;
 }
 
 .right-social {
-  position: fixed;
-  top: 50vh;
   right: 40px;
-  color: var(--text-teal);
 }
 
 .vertical-line {
@@ -196,20 +182,13 @@ span.typed:before {
 }
 
 .right-social li:hover,
-.left-social li:hover,
-.right-social li a:hover {
+.left-social li:hover {
   color: var(--bright-green);
 }
 
 .left-social li :not(div):hover {
   transform: scale(1.5);
   transition-duration: 0.3s;
-  transition-timing-function: ease;
-  /* transform: translateY(-4px); */
-}
-
-.right-social a:hover {
-  /* font-size: 1.05rem; */
 }
 
 .left-social li div:hover,
@@ -218,16 +197,6 @@ span.typed:before {
 }
 
 /* ABOUT  */
-
-hr {
-  display: none;
-  /* margin: 20px 30%;
-  color: var(--light-teal);
-  border: 0;
-  height: 0px;
-  border-top: 1px solid var(--dark-teal);
-  border-bottom: 1px solid var(--light-teal); */
-}
 
 #about,
 #projects {
@@ -279,8 +248,9 @@ hr {
 
 .project {
   margin-bottom: 100px;
+  height: 50vh;
 }
-#projects h3.project-type {
+#projects .project-type {
   text-align: center;
 }
 
@@ -299,8 +269,7 @@ hr {
 #projects img {
   mix-blend-mode: screen;
   width: 40vw;
-  height: auto;
-  height: 30vw;
+  max-height: 80%;
   position: absolute;
 }
 
