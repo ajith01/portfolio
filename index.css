@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;800&display=swap');
 
 :root {
-  --teal: #73a9ad;
+  --teal: #426d70;
   --light-teal: #90c8ac;
   --bright-green: #c4dfaa;
   --bright-yellow: #f5f0bb;
@@ -65,7 +65,7 @@ nav {
 }
 
 p {
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .shadow {
@@ -103,7 +103,7 @@ nav a:hover {
 #landing p:not(.small-text) {
   margin: 20px 0 25vh 0;
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 #landing h1 {
@@ -124,7 +124,7 @@ nav a:hover {
 }
 #landing p {
   padding-right: 20vw;
-  color: var(--text-teal);
+  color: white;
   margin-top: auto;
 }
 
@@ -213,6 +213,8 @@ nav a:hover {
 #about p {
   font-size: 1.25rem;
   margin: 0 15vh 30px 15vh;
+  color: white;
+  font-weight: 400;
 }
 
 .tech-list {
@@ -441,7 +443,7 @@ nav a:hover {
 
 #contact p {
   margin: 10px 30% 50px 30%;
-  color: var(--text-teal);
+  color: white;
   font-size: 1.5rem;
 }
 

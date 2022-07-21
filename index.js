@@ -28,7 +28,7 @@ setTimeout(() => {
       '_',
       ' I am a Recent Computer Science Grad.',
       ' I am a Math and Physics Grad.',
-      ' I am a Aspiring Software Engineer.',
+      ' I am a Software Engineer.',
     ],
     typeSpeed: 20,
     backSpeed: 20,
